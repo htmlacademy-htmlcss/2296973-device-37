@@ -5,8 +5,84 @@
     <title>HTML Academy: Девайс</title>
   </head>
   <body>
+    <!-- Header -->
+    <header>
+      <nav>
+        <a href="#">
+        <img src="#" alt="Логотип сайта device">
+      </a>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
+      <form action="https://echo.htmlacademy.ru/" method="post">
+        <label class="visually-hidden" for="site-search">Поиск по сайту</label>
+          <input type="text" id="site-search" placeholder="Поиск по сайту" name="site-search">
+          <button type="button">Найти</button>
+      </form>
 
+      <a href="#">Войти</a>
+
+      <ul>
+        <li><a href="#">Сравнить</a></li>
+        <li><a href="#">Корзина</a></li>
+      </ul>
+    </nav>
+
+    <ul>
+      <li>
+        <a href="#">Каталог товаров</a>
+        <ul class="visually-hidden"></ul>
+      </li>
+    </ul>
+
+    <ul>
+      <li><a href="#">Доставка</a></li>
+      <li><a href="#">Гарантия</a></li>
+      <li><a href="#">Контакты</a></li>
+    </ul>
+    </header>
+    <!-- Header -->
+
+    <!-- Main -->
+    <main>
+      <!-- Slider-section -->
+      <section class="slider">
+        <div class="slider-wrap">
+          <img src="#" alt="Продукция сайта device">
+          <div class="slider-controls">
+            <button class="slider-button slider-prev">
+              <span class="visually-hidden">Предытущее фото</span>
+            </button>
+            <button class="slider-button slider-next">
+              <span class="visually-hidden">Следующее фото</span>
+            </button>
+          </div>
+
+          <ol class="slider-pagination">
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button slider-pagination-button-current">
+                <span class="visually-hidden">1 фото</span>
+              </button>
+            </li>
+
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button slider-pagination-button-current">
+                <span class="visually-hidden">2 фото</span>
+              </button>
+            </li>
+
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button slider-pagination-button-current">
+                <span class="visually-hidden">3 фото</span>
+              </button>
+            </li>
+          </ol>
+        </div>
+      </section>
+      <!-- Slider-section -->
+    </main>
+    <!-- Main -->
+
+    <!-- Footer -->
+    <footer></footer>
+    <!-- Footer -->
   </body>
 </html>
