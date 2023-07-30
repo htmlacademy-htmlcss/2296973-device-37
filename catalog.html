@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Девайс</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <nav>
+        <a href="#">
+          <img src="#" alt="Логотип сайта device">
+        </a>
+
+        <form action="https://echo.htmlacademy.ru/" method="post">
+          <label class="visually-hidden" for="site-search">Поиск по сайту</label>
+            <input type="text" id="site-search" placeholder="Поиск по сайту" name="site-search">
+            <button type="button">Найти</button>
+        </form>
+
+        <a href="#">Войти</a>
+
+        <ul>
+          <li><a href="#">Сравнить</a></li>
+          <li><a href="#">Корзина</a></li>
+        </ul>
+      </nav>
+
+      <ul>
+        <li>
+          <a href="#">Каталог товаров</a>
+          <ul class="visually-hidden"></ul>
+        </li>
+      </ul>
+
+      <ul>
+        <li><a href="#">Доставка</a></li>
+        <li><a href="#">Гарантия</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+    </header>
+    <!-- Header -->
+
+    <!-- Main -->
+    <main>
+      <header>
+        <h1>Моноподы для селфи</h1>
+        <ol class="breadcrumbs">
+          <li class="breadcrumbs-item">
+              <a class="breadcrumbs-link breadcrumbs-home" href="index.html">
+                <span class="visually-hidden">
+                  Главная
+                </span>
+              </a>
+          </li>
+          <li class="breadcrumbs-item breadcrumbs-arrow">
+              <a class="breadcrumbs-link">Каталог товаров</a>
+          </li>
+          <li class="breadcrumbs-item breadcrumbs-arrow">
+              <a class="breadcrumbs-link">Моноподы для селфи</a>
+          </li>
+        </ol>
+      </header>
+
+      <section class="catalog-products">
+        <h2 class="visually-hidden">Список товаров с фильтрами</h2>
+        <form class="catalog-filter" action="https://echo.htmlacademy.ru/">
+          <fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-title">Фильтр:</legend>
+            <div class="range">
+              <span>Стоимость</span>
+              <div class="range-scale">
+                <div class="range-bar">
+                  <button class="range-toggle">
+                    <span class="visually-hidden">Изменить минимальную цену.</span>
+                  </button>
+                  <button class="range-toggle">
+                    <span class="visually-hidden">Изменить максимальную цену.</span>
+                  </button>
+                </div>
+              </div>
+              <div class="range-wrapper-inputs">
+                <label class="catalog-filter-label">
+                  <span>"от"</span>
+                  <input class="range-input" type="number" value="0" name="mix-price" style="width: 37px">
+                </label>
+                <label class="catalog-filter-label">
+                  <span>"до"</span>
+                  <input class="range-input" type="number" value="5000" name="max-price" style="width: 37px">
+                </label>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-title">Цвет</legend>
+            <ul class="catalog-filter-list">
+              <li class="catalog-filter-item">
+                <input class="visually-hidden" type="checkbox" name="black">
+                <span class="control-mark"></span>
+                <span class="control-label">Черный</span>
+              </li>
+
+              <li class="catalog-filter-item">
+                <input class="visually-hidden" type="checkbox" name="white">
+                <span class="control-mark"></span>
+                <span class="control-label">Белый</span>
+              </li>
+
+              <li class="catalog-filter-item">
+                <input class="visually-hidden" type="checkbox" name="blue">
+                <span class="control-mark"></span>
+                <span class="control-label">Синий</span>
+              </li>
+
+              <li class="catalog-filter-item">
+                <input class="visually-hidden" type="checkbox" name="red">
+                <span class="control-mark"></span>
+                <span class="control-label">Красный</span>
+              </li>
+
+              <li class="catalog-filter-item">
+                <input class="visually-hidden" type="checkbox" name="pink">
+                <span class="control-mark"></span>
+                <span class="control-label">Розовый</span>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-title">Bluetooth</legend>
+            <ul class="catalog-filter-item">
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="visually-hidden control-input" type="radio" name="product-group" value="shaving-supplies" checked="">
+                  <span class="control-mark"></span>
+                  <span class="control-label">Есть</span>
+                </label>
+              </li>
+
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="visually-hidden control-input" type="radio" name="product-group" value="shaving-supplies" checked="">
+                  <span class="control-mark"></span>
+                  <span class="control-label">Нет</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+    <!-- Main -->
+
+    <!-- Footer -->
+    <footer>
+      <a href="#"><img src="#" alt="Логотип магазина device"></a>
+      <address>
+        <p>Санкт-Петербург, набережная
+          реки Карповки, 5, литера П.
+        </p>
+      </address>
+
+      <ul>
+        <li><a href="#">Доставка</a></li>
+        <li><a href="#">Гарантия</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+
+      <a href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
+
+      <ul>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+      </ul>
+
+      <a href="#"></a>
+    </footer>
+    <!-- Footer -->
+  </body>
