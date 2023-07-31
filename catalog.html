@@ -43,6 +43,7 @@
 
     <!-- Main -->
     <main>
+      <!-- Header -->
       <header>
         <h1>Моноподы для селфи</h1>
         <ol class="breadcrumbs">
@@ -61,9 +62,12 @@
           </li>
         </ol>
       </header>
+      <!-- Header -->
 
+      <!-- Catalog-products-section -->
       <section class="catalog-products">
         <h2 class="visually-hidden">Список товаров с фильтрами</h2>
+        <!-- Filtration -->
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/">
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Фильтр:</legend>
@@ -96,33 +100,43 @@
             <legend class="catalog-filter-title">Цвет</legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
-                <input class="visually-hidden" type="checkbox" name="black">
-                <span class="control-mark"></span>
-                <span class="control-label">Черный</span>
+                <label class="control">
+                  <input class="visually-hidden" type="checkbox" name="black">
+                  <span class="control-mark"></span>
+                  <span class="control-label">Черный</span>
+                </label>
               </li>
 
               <li class="catalog-filter-item">
-                <input class="visually-hidden" type="checkbox" name="white">
-                <span class="control-mark"></span>
-                <span class="control-label">Белый</span>
+                <label class="control">
+                  <input class="visually-hidden" type="checkbox" name="white">
+                  <span class="control-mark"></span>
+                  <span class="control-label">Белый</span>
+                </label>
               </li>
 
               <li class="catalog-filter-item">
-                <input class="visually-hidden" type="checkbox" name="blue">
-                <span class="control-mark"></span>
-                <span class="control-label">Синий</span>
+                <label class="control">
+                  <input class="visually-hidden" type="checkbox" name="blue">
+                  <span class="control-mark"></span>
+                  <span class="control-label">Синий</span>
+                </label>
               </li>
 
               <li class="catalog-filter-item">
-                <input class="visually-hidden" type="checkbox" name="red">
-                <span class="control-mark"></span>
-                <span class="control-label">Красный</span>
+                <label class="control">
+                  <input class="visually-hidden" type="checkbox" name="red">
+                  <span class="control-mark"></span>
+                  <span class="control-label">Красный</span>
+                </label>
               </li>
 
               <li class="catalog-filter-item">
-                <input class="visually-hidden" type="checkbox" name="pink">
-                <span class="control-mark"></span>
-                <span class="control-label">Розовый</span>
+                <label class="control">
+                  <input class="visually-hidden" type="checkbox" name="pink">
+                  <span class="control-mark"></span>
+                  <span class="control-label">Розовый</span>
+                </label>
               </li>
             </ul>
           </fieldset>
@@ -147,8 +161,63 @@
               </li>
             </ul>
           </fieldset>
+          <button type="submit">Показать</button>
         </form>
+        <!-- Filtration -->
+
+        <!-- Sorting -->
+        <div class="catalog-right-column">
+          <div class="sorting-container">
+            <div class="select">
+              <select class="select-control" aria-label="Сортировка">
+                <option value="popular">Сначала популярное</option>
+                <option value="cheap">Сначала дешёвое</option>
+                <option value="expensive">Сначала дорогое</option>
+              </select>
+            </div>
+            <a class="card-toggle" href="#">s</a>
+            <a class="card-toggle" href="#">s</a>
+          </div>
+          <ul class="product-list">
+            <li class="product-card">
+              <a href="#">
+                <img src="#" alt="">
+              </a>
+              <h2>Любительская селфи-палка</h2>
+              <span>500 ₽</span>
+            </li>
+            <li class="product-card">
+              <a href="#">
+                <img src="#" alt="">
+              </a>
+              <h2>Профессиональная селфи-палка</h2>
+              <span>1500 ₽</span>
+            </li>
+            <li class="product-card">
+              <a href="#">
+                <img src="#" alt="">
+              </a>
+              <h2>Непотопляемая селфи-палка</h2>
+              <span>500 ₽</span>
+            </li>
+            <li class="product-card">
+              <a href="#">
+                <img src="#" alt="">
+              </a>
+              <h2>Селфи-палка «Следуй за мной»</h2>
+              <span>500 ₽</span>
+            </li>
+
+          </ul>
+          <button type="button">Загрузить еще</button>
+        </div>
+        <!-- Sorting -->
       </section>
+      <!-- Catalog-products-section -->
+
+      <!-- Pagination -->
+
+      <!-- Pagination -->
     </main>
     <!-- Main -->
 
