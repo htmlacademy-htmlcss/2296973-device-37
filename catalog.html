@@ -15,7 +15,9 @@
         <div class="wrap-user-menu">
           <form class="user-form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="site-search">Поиск по сайту</label>
-              <input class="user-input catalog-input" type="text" id="site-search" placeholder="Текст поиска" name="site-search">
+              <div class="user-input-wrapper">
+                <input class="user-input catalog-input" type="text"  value="Текст поиска" name="site-search" placeholder="Поиск по сайту">
+              </div>
               <button class="user-menu-buttom"  id="site-search" type="submit">Найти</button>
           </form>
           <nav class="navigation-user">
@@ -28,7 +30,7 @@
                 <a class="compare" href="#">Сравнить</a>
               </li>
               <li class="shop-user-control-item">
-                                <div class="shop-cart-wrap">
+                <div class="shop-cart-wrap">
                   <ul class="shop-cart-list">
                     <li class="shop-cart-item">
                       <a class="shop-cart-item-wrap" href="#">
@@ -126,10 +128,10 @@
       <header class="container breadcrumbs-wrap">
         <h1 class="breadcrumbs-title">Моноподы для селфи</h1>
         <ol class="breadcrumbs">
-          <li class="breadcrumbs-item arrow">
+          <li class="breadcrumbs-item">
               <a class="breadcrumbs-link current-link" href="index.html">Главная</a>
           </li>
-          <li class="breadcrumbs-item arrow">
+          <li class="breadcrumbs-item">
               <a class="breadcrumbs-link" href="index.html">Каталог товаров</a>
           </li>
           <li class="breadcrumbs-item">
@@ -160,11 +162,11 @@
                   </div>
                 </div>
                 <div class="range-wrapper-inputs">
-                  <label class="catalog-filter-label label-from">
+                  <label class="catalog-filter-label">
                     <span>от</span>
                     <input class="range-input" type="number" value="0" style="width: 40px;" name="mix-price">
                   </label>
-                  <label class="catalog-filter-label label-before">
+                  <label class="catalog-filter-label">
                     <span>до</span>
                     <input class="range-input" type="number" value="5000" style="width: 40px;"  name="max-price">
                   </label>

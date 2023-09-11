@@ -24,7 +24,7 @@
 }
 
 :root {
-  /*primary colors*/
+  /*  primary colors*/
   --color-black: #000000;
   --color-dark-gray: #444444;
   --color-gray: #dcdcdc;
@@ -114,11 +114,13 @@ body {
 }
 
 .header-logo {
+  margin: 0;
   margin-bottom: 29px;
   display: block;
 }
 
 .logo-wrap {
+  display: block;
   width: 145px;
   transition: opacity .3s ease-in-out;
 }
@@ -1467,9 +1469,6 @@ body {
   opacity: 0.5;
 }
 
-.catalog-input::placeholder {
-  opacity: 1;
-}
 
 .subscribe-button {
   padding: 15px 35px;
@@ -1583,6 +1582,22 @@ body {
   padding-right: 20px;
 }
 
+.breadcrumbs-item:not(:last-child) {
+  position: relative;
+}
+
+.breadcrumbs-item:not(:last-child)::after {
+  position: relative;
+  left: 10px;
+  bottom: 2px;
+  content: "";
+  border: solid var(--color-black);
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 2px;
+  transform: rotate(-45deg);
+}
+
 .breadcrumbs-link {
   font-size: 16px;
   line-height: 20px;
@@ -1606,22 +1621,6 @@ body {
 
 .current-link{
   text-decoration: none;
-}
-
-.arrow{
-  position: relative;
-}
-
-.arrow::after {
-  position: relative;
-  left: 10px;
-  bottom: 2px;
-  content: "";
-  border: solid var(--color-black);
-  border-width: 0 1px 1px 0;
-  display: inline-block;
-  padding: 2px;
-  transform: rotate(-45deg);
 }
 
 .breadcrumbs-item:last-child{
@@ -1760,12 +1759,10 @@ body {
   font-size: 14px;
   display: flex;
   line-height: 20px;
-}
-
-.label-from {
-  width: 34px;
+  width: 55px;
   height: 22px;
 }
+
 
 .catalog-filter-label span {
   opacity: 0.3;
@@ -1788,7 +1785,6 @@ body {
 .catalog-filter-label:focus-within {
   outline: 2px solid var(--color-purple);
   outline-offset: 2px;
-
 }
 
 .range-input[type="number"] {
