@@ -2357,7 +2357,6 @@ body {
 }
 /* Catalog */
 
-
 /* Main */
 
 /* Footer */
@@ -2471,7 +2470,6 @@ body {
   align-items: center;
 }
 
-
 .footer-line::after {
  content: "";
  display: block;
@@ -2538,7 +2536,6 @@ body {
 }
 /* Footer */
 
-
 /* Modal */
 .modal-container {
   position: fixed;
@@ -2563,11 +2560,9 @@ body {
 
 .modal-auth {
   position: relative;
-
 }
 
 .modal-content {
-
   position: relative;
 }
 
@@ -2803,7 +2798,6 @@ body {
 
 .modal-quantity {
   position: relative;
-  /* display: flex; */
   margin-bottom: 14px;
 }
 
