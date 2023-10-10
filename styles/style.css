@@ -814,7 +814,6 @@ body {
 
 /* -------Pagination------- */
 .slider-pagination {
-  position: absolute;
   grid-column: 1 / -1;
   display: flex;
   justify-content: center;
@@ -824,7 +823,9 @@ body {
   width: 100%;
   gap: 20px;
   list-style-type: none;
+  margin-top: -12px;
 }
+
 
 .slider-pagination-item {
   display: flex;
